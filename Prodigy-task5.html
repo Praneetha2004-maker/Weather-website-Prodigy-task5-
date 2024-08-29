@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" type="text/css" href="Prodigy-task5.css">
+ <title>Weather Now</title>
+</head>
+<body>
+ <div class="container">
+   <div class="weather_widget">
+      <h2 class="title" align="center">Weather Now</h2>
+      <div class="input_section">
+        <input type="text" id="cityInput" placeholder="Enter City Name">
+        <button onclick="fetchWeather()"><img src="https://cdn-icons-png.flaticon.com/512/1055/1055646.png"></button>
+      </div>
+      <div class="weather_info" align="center">
+        <img src="https://png.pngtree.com/png-clipart/20230818/original/pngtree-simple-weather-icon-outline-filled-colorful-forecast-sing-with-blue-cloud-and-sun-vector-isolated-symbol-on-white-background-picture-image_8014480.png" alt="weather" class="weather_icon">
+        <h1 id="temperature">0°C</h1>
+        <h2 id="cityName">CityName</h2>
+      </div>
+      <div class="extra_info">
+        <div class="details humidity">
+          <img src="https://cdn-icons-png.flaticon.com/512/414/414927.png" alt="humidity" class="icon">
+          <h2>HUMIDITY</h2>
+          <h3 id="humidity">0%</h3>
+        </div>
+        <div class="details wind">
+          <img src="https://static.vecteezy.com/system/resources/previews/016/537/365/original/watercolor-weather-wind-png.png" alt="wind" class="icon">
+          <h2>WIND</h2>
+          <h3 id="windSpeed">0 km/h</h3>
+        </div>
+      </div>
+   </div>
+ </div>
+ <script src="Prodigy-task5.js"></script>
+</body>
+</html>
